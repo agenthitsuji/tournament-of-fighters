@@ -3,9 +3,8 @@
 
 import weapon as weapons
 import armor as armors
-import random
 
-fighters = []
+import random
 
 class Fighter():
     
@@ -26,7 +25,7 @@ class Fighter():
         self.hp = self.fighter_hp()
         
     def __repr__(self):
-        return "{name} from {homeland}\nHP: {hp}\nEquipped with {wep} / {ar} AR and {arm}\nSpeed: {spd}\nVIT: {vit}\nAGI: {agi}\nSTR: {str}\nDEX: {dex}".format(
+        return "{name} from {homeland}\nHP: {hp}\nEquipped with {wep} / {ar} AR and {arm}\nSpeed: {spd}\nVIT: {vit}\nAGI: {agi}\nSTR: {str}\nDEX: {dex}\n".format(
             name = self.name, 
             homeland = self.homeland,
             hp = self.hp,
@@ -70,23 +69,9 @@ class Fighter():
             return 200 + ((self.vitality - 10) * 15)
         
     
-f1 = Fighter("Pekor", "Pekoland", 5, 7, 12, 8, weapons.weapons[0], armors.armors[0], list())
-f2 = Fighter("Bumber", "Belangerijke", 12, 4, 6, 13, weapons.weapons[0], armors.armors[0], list())
-fighters.append(f1)
-fighters.append(f2)
 
 
-
-for x in fighters:
-    print(x)
-    print(x.fighter_calculate_attack_rating())
-    print(x.fighter_attack())
-    print(x.fighter_receive_damage(23))
     
-def generate_fighter():
-    return Fighter("random", "fighter", random.randint(0, 99), random.randint(0, 99), random.randint(0, 99), random.randint(0, 99), weapons.weapons[0], armors.armors[0], list())
 
 
 
-for x in range (3):
-    print(generate_fighter())

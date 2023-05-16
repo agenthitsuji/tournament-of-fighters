@@ -1,0 +1,7 @@
+Weapon,Base Damage,STR Scaling,DEX Scaling,Weight
+Sword,10,C,C,4
+Spear,8,E,A,4
+Bulgarslayer,25,A,X,20
+Big Bad Hammer,30,S,X,25
+Estoc,9,D,A,3
+Falchion,12,X,S,3

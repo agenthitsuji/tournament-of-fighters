@@ -1,7 +1,6 @@
 # Tournament of Fighters
 # Armors
 
-armors = []
 
 class Armor():
     
@@ -17,4 +16,9 @@ class Armor():
     
 
 
-armors.append(Armor("Chainmail", 0.10, 10))
+def create_armor(name, defence, weight):
+    return {name: Armor(name, defence, weight)}
+    
+# Initializing Armors
+
+

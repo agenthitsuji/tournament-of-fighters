@@ -1,8 +1,11 @@
 # Tournament of Fighters
 # Main Loop
 
-import fighter as fighters
 
+# DATABASE
+import database as db
 
-print("Welcome to Tournament of Fighters")
-print(fighters.fighters)
+xx = db.Database()
+
+print(xx.weapon_db)
+print(xx.armor_db)
